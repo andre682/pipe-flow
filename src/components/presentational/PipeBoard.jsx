@@ -1,19 +1,12 @@
 import React from 'react'
-import Slot from './Slot.jsx'
+import BoardRow from './BoardRow.jsx'
 
-
-export default () => {
-  const [X, Y] = [15, 10]
+export default (props) => {
+  const { rows, columns } = props 
   return (
-    <div className="col-12">
-      {new Array(Y).fill('').map((j, row) => (
-        <div className="row" key={`row-${row}`}>{
-            new Array(X).fill('').map((i, column) => 
-            <div className="cell" key={`column-${column}`}>
-                <Slot/>
-            </div>
-            )}</div>
-      ))}
-    </div>
-  )
-}
+  <div className="col-12">
+    {new Array(rows).fill('').map((_, row) => (
+      <BoardRow row={row} cells={columns}/>
+    ))}
+  </div>
+)}

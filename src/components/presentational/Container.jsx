@@ -13,7 +13,7 @@ export default () => {
             <ToolBox />
           </div>
           <div className="col-11 console">
-            <PipeBoard />
+            <PipeBoard rows={10} columns={10} />
           </div>
         </div>
       </DndProvider>
