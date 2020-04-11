@@ -1,9 +1,21 @@
 import TYPES from './types'
-import axios from 'axios'
 
-const apiUrl = process.env.API_URL
-const headers = {
-  Accept: 'application/json'
+export const dropTool = ({ row = 0, column = 0, tool = null }) => {
+  return {
+    type: TYPES.DROP_TOOL,
+    row,
+    column,
+    tool
+  }
+}
+
+export const hoverTool = ({ row = 0, column = 0, tool = null }) => {
+  return {
+    type: TYPES.HOVER_TOOL,
+    row,
+    column,
+    tool
+  }
 }
 
 export const typeBundleIdentifier = value => {

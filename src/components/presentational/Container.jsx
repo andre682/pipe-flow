@@ -1,6 +1,6 @@
 import React from 'react'
 import ToolBox from './ToolBox.jsx'
-import PipeBoard from './PipeBoard.jsx'
+import Board from '../container/Board'
 import { DndProvider } from 'react-dnd'
 import Backend from 'react-dnd-html5-backend'
 
@@ -13,7 +13,7 @@ export default () => {
             <ToolBox />
           </div>
           <div className="col-11 console">
-            <PipeBoard rows={10} columns={10} />
+            <Board/>
           </div>
         </div>
       </DndProvider>
