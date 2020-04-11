@@ -1,0 +1,13 @@
+.result-text {
+  font-size: 45px;
+  margin: 60px 0px 0px;
+}
+
+.build-number-field {
+    width: 15%;
+    text-align: center;
+}
+
+.controllers {
+  margin: 15px 0px 0px ;
+}
