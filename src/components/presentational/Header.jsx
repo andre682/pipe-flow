@@ -4,7 +4,7 @@ export default () => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        Build manager
+        Pipe Flow
       </a>
     </nav>
   )

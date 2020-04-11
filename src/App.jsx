@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Container from './components/presentational/Container.jsx'
 import Header from './components/presentational/Header.jsx'
+import Container from './components/presentational/Container.jsx'
 import storeFactory from './store'
 import { Provider } from 'react-redux'
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Header />
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
               <Container />

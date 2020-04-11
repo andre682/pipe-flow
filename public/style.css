@@ -11,3 +11,15 @@
 .controllers {
   margin: 15px 0px 0px ;
 }
+
+.cell {
+  background-color: #3b3b3b;
+  border: 1px solid #000000;
+  width: 100px;
+  height: 100px;
+}
+
+.console {
+  border: 10px double #2e2c2c;
+  padding: 10px;
+}
